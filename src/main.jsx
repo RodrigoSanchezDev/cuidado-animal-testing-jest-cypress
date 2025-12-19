@@ -5,13 +5,23 @@ import { store } from './store'
 import './index.css'
 import App from './App.jsx'
 
+/**
+ * Habilita MSW para interceptar requests en:
+ * - Desarrollo local (import.meta.env.DEV)
+ * - GitHub Pages (hostname termina en github.io)
+ * MSW actúa como "backend virtual" para la app
+ */
 async function enableMocking() {
-  if (import.meta.env.DEV) {
+  const isGitHubPages = window.location.hostname.endsWith('github.io')
+  const shouldEnableMSW = import.meta.env.DEV || isGitHubPages
+
+  if (shouldEnableMSW) {
     const { worker } = await import('./mocks/browser')
+    // Usar BASE_URL para que el SW se cargue desde el subpath correcto en Pages
     return worker.start({
       onUnhandledRequest: 'bypass',
       serviceWorker: {
-        url: '/mockServiceWorker.js'
+        url: `${import.meta.env.BASE_URL}mockServiceWorker.js`
       }
     })
   }

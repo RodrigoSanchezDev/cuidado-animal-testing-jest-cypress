@@ -4,7 +4,8 @@
  * Sin dependencias externas - compatible con MSW browser mock
  */
 
-const GRAPHQL_API_URL = '/graphql'
+// BASE_URL dinámico: '/' en local, '/<repo>/' en GitHub Pages
+const GRAPHQL_API_URL = `${import.meta.env.BASE_URL}graphql`
 
 /**
  * Ejecuta una query GraphQL usando fetch nativo (compatible con MSW)

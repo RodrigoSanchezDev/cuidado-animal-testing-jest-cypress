@@ -1,4 +1,5 @@
-const REST_API_URL = '/api'
+// BASE_URL dinámico: '/' en local, '/<repo>/' en GitHub Pages
+const REST_API_URL = `${import.meta.env.BASE_URL}api`
 
 /**
  * Fetch all clients from REST API

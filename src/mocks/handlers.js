@@ -2,27 +2,28 @@ import { http, HttpResponse } from 'msw'
 import { clients, pets, vets, appointments } from './data'
 
 // REST API Handlers
+// Usamos wildcard (*) para matchear tanto '/' (local) como '/<repo>/' (GitHub Pages)
 const restHandlers = [
-  // GET /api/clients
-  http.get('/api/clients', () => {
+  // GET */api/clients
+  http.get('*/api/clients', () => {
     console.log('🟢 MSW: GET /api/clients')
     return HttpResponse.json(clients)
   }),
 
-  // GET /api/pets
-  http.get('/api/pets', () => {
+  // GET */api/pets
+  http.get('*/api/pets', () => {
     console.log('🟢 MSW: GET /api/pets')
     return HttpResponse.json(pets)
   }),
 
-  // GET /api/vets
-  http.get('/api/vets', () => {
+  // GET */api/vets
+  http.get('*/api/vets', () => {
     console.log('🟢 MSW: GET /api/vets')
     return HttpResponse.json(vets)
   }),
 
-  // GET /api/appointments - with date and optional vetId filter
-  http.get('/api/appointments', ({ request }) => {
+  // GET */api/appointments - with date and optional vetId filter
+  http.get('*/api/appointments', ({ request }) => {
     const url = new URL(request.url)
     const date = url.searchParams.get('date')
     const vetId = url.searchParams.get('vetId')
@@ -43,8 +44,8 @@ const restHandlers = [
   }),
 ]
 
-// GraphQL Handler - intercepta POST /graphql
-const graphqlHandler = http.post('/graphql', async ({ request }) => {
+// GraphQL Handler - intercepta POST */graphql (wildcard para subpath)
+const graphqlHandler = http.post('*/graphql', async ({ request }) => {
   const body = await request.json()
   const { query, variables = {} } = body
   
