@@ -61,8 +61,8 @@ Dashboard administrativo para clínicas veterinarias con gestión de clientes, m
 
 ## Requisitos
 
-- **Node.js** >= 18.x (recomendado: última versión LTS)
-- **npm** >= 9.x
+- **Node.js** >= 20.x (recomendado: v24.x o última LTS)
+- **npm** >= 10.x
 
 ---
 
