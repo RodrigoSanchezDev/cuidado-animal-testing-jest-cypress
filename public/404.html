@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cuidado Animal - Redirigiendo...</title>
+    <script>
+      // GitHub Pages SPA Fallback
+      // Redirige rutas 404 al index.html preservando la ruta para React Router
+      // Basado en: https://github.com/rafgraph/spa-github-pages
+      const repo = '/cuidado-animal-testing-jest-cypress';
+      const segmentCount = 1; // Número de segmentos del path a preservar (el repo)
+      
+      const fullPath = window.location.pathname;
+      // Remover el path del repo para obtener la ruta de la app
+      const appPath = fullPath.startsWith(repo) 
+        ? fullPath.slice(repo.length) 
+        : fullPath;
+      
+      // Redirigir al index con la ruta en query string
+      const redirectUrl = 
+        window.location.origin + 
+        repo + 
+        '/?p=' + encodeURIComponent(appPath) +
+        (window.location.search ? '&q=' + encodeURIComponent(window.location.search.slice(1)) : '') +
+        window.location.hash;
+      
+      window.location.replace(redirectUrl);
+    </script>
+  </head>
+  <body>
+    <p>Redirigiendo...</p>
+  </body>
+</html>

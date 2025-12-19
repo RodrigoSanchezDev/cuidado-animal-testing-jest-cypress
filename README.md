@@ -356,6 +356,44 @@ Las contribuciones son bienvenidas. Por favor:
 
 ---
 
+## 🚀 Deploy en GitHub Pages
+
+### URL de Producción
+
+**🔗 [https://rodrigosanchezdev.github.io/cuidado-animal-testing-jest-cypress/](https://rodrigosanchezdev.github.io/cuidado-animal-testing-jest-cypress/)**
+
+### Configuración Automática
+
+El proyecto incluye un workflow de GitHub Actions que despliega automáticamente cada push a `main`.
+
+**Para habilitar GitHub Pages:**
+
+1. Ve a tu repositorio en GitHub
+2. **Settings** → **Pages**
+3. En **Source**, selecciona **GitHub Actions**
+4. El primer deploy se ejecutará automáticamente
+
+### Funcionamiento del Routing (SPA)
+
+- **Local (`npm run dev`):** Funciona con `base: '/'`
+- **Producción (Pages):** Usa `base: '/cuidado-animal-testing-jest-cypress/'`
+- **Refresh en rutas profundas:** El archivo `404.html` redirige al `index.html` preservando la ruta, permitiendo que React Router maneje `/clientes`, `/mascotas`, etc.
+
+### Verificación
+
+```bash
+# Local funciona igual
+npm run dev
+
+# Build genera /dist con base correcto
+npm run build
+
+# Preview local del build de producción
+npm run preview
+```
+
+---
+
 ## Licencia
 
 Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.

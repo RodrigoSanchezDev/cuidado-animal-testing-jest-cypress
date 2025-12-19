@@ -1,10 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cuidado-animal-testing-jest-cypress-</title>
+    <title>Cuidado Animal - Sistema de Gestión Veterinaria</title>
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+      // Reconstruye la ruta desde el query string (viene del 404.html)
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        const path = params.get('p');
+        if (path) {
+          const query = params.get('q') ? '?' + params.get('q') : '';
+          const newUrl = window.location.pathname.replace(/\/$/, '') + path + query + window.location.hash;
+          window.history.replaceState(null, '', newUrl);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

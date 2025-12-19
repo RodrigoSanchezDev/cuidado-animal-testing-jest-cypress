@@ -7,9 +7,12 @@ import { AppointmentsPage } from '../features/appointments/AppointmentsPage'
 import { VetsPage } from '../features/vets/VetsPage'
 import { VetAgendaPage } from '../features/vets/VetAgendaPage'
 
+// Basename dinámico: detecta si estamos en GitHub Pages por el base URL de Vite
+const basename = import.meta.env.BASE_URL
+
 export function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Dashboard />} />
