@@ -1,0 +1,42 @@
+[
+  {
+    "id": "c1",
+    "name": "María González",
+    "phone": "+56 9 1234 5678",
+    "email": "maria.gonzalez@email.com",
+    "address": "Av. Providencia 1234, Santiago",
+    "petIds": ["p1", "p2"]
+  },
+  {
+    "id": "c2",
+    "name": "Carlos Rodríguez",
+    "phone": "+56 9 2345 6789",
+    "email": "carlos.rodriguez@email.com",
+    "address": "Los Leones 567, Providencia",
+    "petIds": ["p3"]
+  },
+  {
+    "id": "c3",
+    "name": "Ana Martínez",
+    "phone": "+56 9 3456 7890",
+    "email": "ana.martinez@email.com",
+    "address": "Av. Apoquindo 890, Las Condes",
+    "petIds": ["p4", "p5"]
+  },
+  {
+    "id": "c4",
+    "name": "Pedro Silva",
+    "phone": "+56 9 4567 8901",
+    "email": "pedro.silva@email.com",
+    "address": "Av. Italia 321, Ñuñoa",
+    "petIds": ["p6"]
+  },
+  {
+    "id": "c5",
+    "name": "Laura Fernández",
+    "phone": "+56 9 5678 9012",
+    "email": "laura.fernandez@email.com",
+    "address": "Manuel Montt 456, Providencia",
+    "petIds": ["p7"]
+  }
+]

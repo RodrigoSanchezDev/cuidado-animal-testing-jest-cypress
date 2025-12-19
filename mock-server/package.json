@@ -1,0 +1,14 @@
+{
+  "name": "cuidado-animal-mock-server",
+  "type": "module",
+  "scripts": {
+    "rest": "node rest-server.js",
+    "graphql": "node graphql-server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^5.1.1"
+  }
+}

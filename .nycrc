@@ -1,0 +1,17 @@
+{
+  "all": true,
+  "include": ["src/**/*.js", "src/**/*.jsx"],
+  "exclude": [
+    "src/mocks/**",
+    "src/**/*.test.*",
+    "src/**/*.spec.*",
+    "src/main.jsx"
+  ],
+  "reporter": ["text", "html", "lcov"],
+  "report-dir": "coverage-e2e",
+  "check-coverage": true,
+  "lines": 70,
+  "functions": 70,
+  "branches": 70,
+  "statements": 70
+}

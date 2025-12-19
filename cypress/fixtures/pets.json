@@ -1,0 +1,88 @@
+[
+  {
+    "id": "p1",
+    "name": "Max",
+    "species": "Perro",
+    "breed": "Golden Retriever",
+    "age": 3,
+    "ownerId": "c1",
+    "ownerName": "María González",
+    "photoUrl": "/images/pets/pet-01.jpg",
+    "medicalHistory": [
+      { "date": "2024-08-15", "description": "Vacuna antirrábica", "vet": "Dr. Muñoz" },
+      { "date": "2024-06-10", "description": "Control general - Buen estado", "vet": "Dra. Soto" }
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Luna",
+    "species": "Gato",
+    "breed": "Siamés",
+    "age": 2,
+    "ownerId": "c1",
+    "ownerName": "María González",
+    "photoUrl": "/images/pets/pet-02.jpg",
+    "medicalHistory": [
+      { "date": "2024-09-20", "description": "Esterilización", "vet": "Dra. Soto" }
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "Rocky",
+    "species": "Perro",
+    "breed": "Bulldog Francés",
+    "age": 4,
+    "ownerId": "c2",
+    "ownerName": "Carlos Rodríguez",
+    "photoUrl": "/images/pets/pet-03.jpg",
+    "medicalHistory": [
+      { "date": "2024-07-05", "description": "Tratamiento dermatológico", "vet": "Dr. Muñoz" }
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Mia",
+    "species": "Gato",
+    "breed": "Persa",
+    "age": 5,
+    "ownerId": "c3",
+    "ownerName": "Ana Martínez",
+    "photoUrl": "/images/pets/pet-04.jpg",
+    "medicalHistory": []
+  },
+  {
+    "id": "p5",
+    "name": "Simba",
+    "species": "Gato",
+    "breed": "Maine Coon",
+    "age": 1,
+    "ownerId": "c3",
+    "ownerName": "Ana Martínez",
+    "photoUrl": "/images/pets/pet-05.jpg",
+    "medicalHistory": [
+      { "date": "2024-10-01", "description": "Primera vacuna", "vet": "Dr. Muñoz" }
+    ]
+  },
+  {
+    "id": "p6",
+    "name": "Toby",
+    "species": "Perro",
+    "breed": "Beagle",
+    "age": 6,
+    "ownerId": "c4",
+    "ownerName": "Pedro Silva",
+    "photoUrl": "/images/pets/pet-06.jpg",
+    "medicalHistory": []
+  },
+  {
+    "id": "p7",
+    "name": "Coco",
+    "species": "Ave",
+    "breed": "Cacatúa",
+    "age": 8,
+    "ownerId": "c5",
+    "ownerName": "Laura Fernández",
+    "photoUrl": "/images/pets/pet-07.jpg",
+    "medicalHistory": []
+  }
+]
